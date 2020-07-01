@@ -23,9 +23,9 @@ class ClientFactory {
                 return
             }
             if urlResponse.statusCode == HttpCodes.success.rawValue {
-                let hpData = response.value ?? ""
+                let hpDataValue = response.data
                 do {
-                    let hpData = try JSONDecoder().decode(ResponseType.self, from: hpData as! Data)
+                    let hpData = try JSONDecoder().decode(ResponseType.self, from: hpDataValue!)
                     onSuccess(hpData)
                 }catch{
                     print(error.localizedDescription)

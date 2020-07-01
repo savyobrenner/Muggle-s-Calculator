@@ -3,12 +3,9 @@ import UIKit
 class WizardsCell: UITableViewCell {
     
     
-    @IBOutlet weak var ivWizardPhoto: UIImageView!
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbSpecie: UILabel!
     @IBOutlet weak var lbBloodStatus: UILabel!
-    @IBOutlet weak var lbMinistryEmployee: UILabel!
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,8 +20,7 @@ class WizardsCell: UITableViewCell {
     
     func prepare(with character: Characters){
         lbName.text = character.name
-        lbSpecie.text = character.species
-        lbBloodStatus.text = character.bloodStatus.rawValue
-        lbMinistryEmployee.text = String(character.ministryOfMagic)
+        lbSpecie.text = "Specie: " + character.species
+        lbBloodStatus.text = "Blood: " + character.bloodStatus.rawValue
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bMk-ZW-oW6">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -356,7 +356,7 @@
             </objects>
             <point key="canvasLocation" x="2318.840579710145" y="93.750000000000014"/>
         </scene>
-        <!--Item 2-->
+        <!--Wizards-->
         <scene sceneID="ALW-kK-kc0">
             <objects>
                 <tableViewController id="bMk-ZW-oW6" customClass="WizardsTableViewController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -365,75 +365,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wizardCell" rowHeight="150" id="wo4-48-fP3" customClass="WizardsCell" customModule="HPApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wizardCell" rowHeight="102" id="wo4-48-fP3" customClass="WizardsCell" customModule="HPApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wo4-48-fP3" id="cbE-Jg-4MK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-JM-7Xs">
-                                            <rect key="frame" x="20" y="5" width="140" height="140"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="W5g-JM-7Xs" secondAttribute="height" multiplier="1:1" id="AJR-jK-A82"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqh-SJ-gpH">
-                                            <rect key="frame" x="168" y="5" width="218" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="specie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-T9-owq">
-                                            <rect key="frame" x="168" y="36" width="234" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="8" y="18" width="398" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bloodstatus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v90-Ij-4bn">
-                                            <rect key="frame" x="168" y="67" width="234" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="8" y="46" width="398" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ministryEmployee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhE-sz-XJW">
-                                            <rect key="frame" x="168" y="98" width="234" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="specie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-T9-owq">
+                                            <rect key="frame" x="8" y="68" width="398" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-Za-Py1">
-                                            <rect key="frame" x="384" y="123" width="22" height="22"/>
+                                            <rect key="frame" x="382" y="70" width="22" height="22"/>
                                             <state key="normal" image="star" catalog="system"/>
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="v90-Ij-4bn" firstAttribute="trailing" secondItem="cbE-Jg-4MK" secondAttribute="trailingMargin" constant="8" id="1BL-q0-QiZ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="sqh-SJ-gpH" secondAttribute="trailing" constant="8" id="C7W-cm-tdz"/>
-                                        <constraint firstItem="CNl-T9-owq" firstAttribute="leading" secondItem="W5g-JM-7Xs" secondAttribute="trailing" constant="8" id="DAa-0m-aY6"/>
-                                        <constraint firstItem="fhE-sz-XJW" firstAttribute="leading" secondItem="W5g-JM-7Xs" secondAttribute="trailing" constant="8" id="HIe-y3-zEs"/>
-                                        <constraint firstAttribute="bottom" secondItem="W5g-JM-7Xs" secondAttribute="bottom" constant="5" id="MeX-ZM-Qaa"/>
-                                        <constraint firstItem="sqh-SJ-gpH" firstAttribute="top" secondItem="W5g-JM-7Xs" secondAttribute="top" id="Qt4-s4-kJ1"/>
-                                        <constraint firstAttribute="bottom" secondItem="Bki-Za-Py1" secondAttribute="bottom" constant="5" id="V1p-S4-FZu"/>
-                                        <constraint firstItem="CNl-T9-owq" firstAttribute="trailing" secondItem="cbE-Jg-4MK" secondAttribute="trailingMargin" constant="8" id="VhT-wr-sRt"/>
-                                        <constraint firstItem="fhE-sz-XJW" firstAttribute="trailing" secondItem="cbE-Jg-4MK" secondAttribute="trailingMargin" constant="8" id="WI9-Th-GFz"/>
-                                        <constraint firstAttribute="trailing" secondItem="Bki-Za-Py1" secondAttribute="trailing" constant="8" id="ZFj-1A-oht"/>
-                                        <constraint firstItem="v90-Ij-4bn" firstAttribute="top" secondItem="CNl-T9-owq" secondAttribute="bottom" constant="10" id="da0-Bq-XUJ"/>
-                                        <constraint firstItem="sqh-SJ-gpH" firstAttribute="leading" secondItem="W5g-JM-7Xs" secondAttribute="trailing" constant="8" id="eN4-ya-ECW"/>
-                                        <constraint firstItem="sqh-SJ-gpH" firstAttribute="leading" secondItem="W5g-JM-7Xs" secondAttribute="trailing" constant="8" id="fly-vW-EUu"/>
-                                        <constraint firstItem="fhE-sz-XJW" firstAttribute="top" secondItem="v90-Ij-4bn" secondAttribute="bottom" constant="10" id="fsG-vc-4jN"/>
-                                        <constraint firstItem="v90-Ij-4bn" firstAttribute="leading" secondItem="W5g-JM-7Xs" secondAttribute="trailing" constant="8" id="hBk-5J-p00"/>
-                                        <constraint firstItem="CNl-T9-owq" firstAttribute="top" secondItem="sqh-SJ-gpH" secondAttribute="bottom" constant="10" id="xep-TX-scA"/>
-                                        <constraint firstItem="W5g-JM-7Xs" firstAttribute="top" secondItem="cbE-Jg-4MK" secondAttribute="top" constant="5" id="xxW-0H-Fml"/>
-                                        <constraint firstItem="W5g-JM-7Xs" firstAttribute="leading" secondItem="cbE-Jg-4MK" secondAttribute="leading" constant="20" id="zFW-n7-efU"/>
+                                        <constraint firstAttribute="trailing" secondItem="CNl-T9-owq" secondAttribute="trailing" constant="8" id="FcX-8S-FP3"/>
+                                        <constraint firstAttribute="bottom" secondItem="CNl-T9-owq" secondAttribute="bottom" constant="16" id="IuW-39-OXB"/>
+                                        <constraint firstItem="v90-Ij-4bn" firstAttribute="top" secondItem="sqh-SJ-gpH" secondAttribute="bottom" constant="4" id="Ltn-Du-RCK"/>
+                                        <constraint firstItem="CNl-T9-owq" firstAttribute="leading" secondItem="cbE-Jg-4MK" secondAttribute="leading" constant="8" id="M0w-EN-QFF"/>
+                                        <constraint firstItem="sqh-SJ-gpH" firstAttribute="top" secondItem="cbE-Jg-4MK" secondAttribute="top" constant="18" id="O52-GX-sGH"/>
+                                        <constraint firstItem="v90-Ij-4bn" firstAttribute="leading" secondItem="cbE-Jg-4MK" secondAttribute="leading" constant="8" id="Qdj-IW-5XQ"/>
+                                        <constraint firstItem="sqh-SJ-gpH" firstAttribute="leading" secondItem="cbE-Jg-4MK" secondAttribute="leading" constant="8" id="brS-gR-yDI"/>
+                                        <constraint firstAttribute="trailing" secondItem="sqh-SJ-gpH" secondAttribute="trailing" constant="8" id="do1-YW-0Rh"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bki-Za-Py1" secondAttribute="trailing" constant="10" id="mlF-df-B59"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bki-Za-Py1" secondAttribute="bottom" constant="10" id="vNa-aI-8oL"/>
+                                        <constraint firstAttribute="trailing" secondItem="v90-Ij-4bn" secondAttribute="trailing" constant="8" id="vsJ-uP-OyW"/>
+                                        <constraint firstItem="CNl-T9-owq" firstAttribute="top" secondItem="v90-Ij-4bn" secondAttribute="bottom" constant="4" id="zLN-IU-LJV"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="ivWizardPhoto" destination="W5g-JM-7Xs" id="qcZ-gb-0TZ"/>
                                     <outlet property="lbBloodStatus" destination="v90-Ij-4bn" id="IPs-B4-bJ8"/>
-                                    <outlet property="lbMinistryEmployee" destination="fhE-sz-XJW" id="XEf-8V-z3e"/>
                                     <outlet property="lbName" destination="sqh-SJ-gpH" id="3EN-HV-Ghm"/>
                                     <outlet property="lbSpecie" destination="CNl-T9-owq" id="rYD-HV-NL5"/>
+                                    <segue destination="xjF-o6-kS8" kind="show" id="YbQ-jd-faG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -442,7 +423,7 @@
                             <outlet property="delegate" destination="bMk-ZW-oW6" id="7R6-pL-k3f"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="oye-wZ-XY9"/>
+                    <tabBarItem key="tabBarItem" title="Wizards" image="person.3" catalog="system" id="oye-wZ-XY9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncc-8a-tsc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -485,11 +466,177 @@
             </objects>
             <point key="canvasLocation" x="961" y="-617"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="yFO-Zr-Gsz">
+            <objects>
+                <viewController id="xjF-o6-kS8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RYw-4u-PMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ministry-of-magic-logo-png-2" translatesAutoresizingMaskIntoConstraints="NO" id="lMp-hq-p4C">
+                                <rect key="frame" x="0.0" y="156" width="414" height="560"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <wkWebView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tda-sd-k0h">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tda-sd-k0h" secondAttribute="height" multiplier="207:74" id="v2L-Vf-vDb"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKM-Pg-Ybm">
+                                <rect key="frame" x="8" y="156" width="398" height="62"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Role:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDZ-JI-MZC">
+                                <rect key="frame" x="8" y="226" width="386" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="House:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-l0-gYl">
+                                <rect key="frame" x="8" y="260" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="School:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCc-Ox-hel">
+                                <rect key="frame" x="8" y="294" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blood Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-Gn-hbS">
+                                <rect key="frame" x="8" y="328" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wand:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyz-Z3-PTA">
+                                <rect key="frame" x="8" y="367" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Patronus:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-Ec-nhZ">
+                                <rect key="frame" x="8" y="406" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animagus:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjD-Bo-47W">
+                                <rect key="frame" x="8" y="445" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fear:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djZ-DF-jb5">
+                                <rect key="frame" x="8" y="484" width="386" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ministry of Magic Employee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcY-2I-1si">
+                                <rect key="frame" x="8" y="552" width="249" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order of Phoenix Member" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Di-BT-CTb">
+                                <rect key="frame" x="8" y="591" width="235" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dumbledore Army" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvR-UK-bhp">
+                                <rect key="frame" x="8" y="630" width="163" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Associations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5p-XS-d55">
+                                <rect key="frame" x="8" y="512" width="386" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Death Eater" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNU-VY-o98">
+                                <rect key="frame" x="8" y="669" width="112" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTa-Yd-PQ4">
+                                <rect key="frame" x="251" y="595" width="16" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="multiply" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQW-9v-u4T">
+                                <rect key="frame" x="178" y="634" width="19" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="checkmark" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZm-hz-Z1b">
+                                <rect key="frame" x="128" y="673" width="16" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="multiply" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPz-cB-REL">
+                                <rect key="frame" x="265" y="556" width="16" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="multiply" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tda-sd-k0h" firstAttribute="top" secondItem="Ebd-Rn-Tfp" secondAttribute="top" id="JWb-is-hvx"/>
+                            <constraint firstItem="tda-sd-k0h" firstAttribute="leading" secondItem="Ebd-Rn-Tfp" secondAttribute="leading" id="Uqg-Em-l0l"/>
+                            <constraint firstItem="tda-sd-k0h" firstAttribute="trailing" secondItem="Ebd-Rn-Tfp" secondAttribute="trailing" id="hbW-Pa-ZWD"/>
+                            <constraint firstItem="rKM-Pg-Ybm" firstAttribute="leading" secondItem="Ebd-Rn-Tfp" secondAttribute="leading" constant="8" id="o8e-j3-DwK"/>
+                            <constraint firstItem="rKM-Pg-Ybm" firstAttribute="top" secondItem="tda-sd-k0h" secondAttribute="bottom" constant="8" id="uwO-bD-e3H"/>
+                            <constraint firstItem="Ebd-Rn-Tfp" firstAttribute="trailing" secondItem="rKM-Pg-Ybm" secondAttribute="trailing" constant="8" id="y8a-oL-tDZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ebd-Rn-Tfp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qXv-VS-Mrm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yj-PW-Ret" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="855"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1267866" width="1920" height="1080"/>
         <image name="bolt" catalog="system" width="101" height="128"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="colour+harry+invisibility+magic+potter+icon-1320183588247354426" width="512" height="512"/>
+        <image name="ministry-of-magic-logo-png-2" width="557" height="495"/>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="pngfind.com-diagon-alley-png-3281278" width="2883" height="1974"/>
         <image name="star" catalog="system" width="128" height="116"/>
     </resources>
