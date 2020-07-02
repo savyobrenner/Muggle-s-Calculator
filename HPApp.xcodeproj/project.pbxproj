@@ -63,7 +63,7 @@
 		2946ABCE24AA913600EDF8D7 /* Divide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divide.swift; sourceTree = "<group>"; };
 		2946ABD024AA914C00EDF8D7 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
 		2946ABD424AA928200EDF8D7 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
-		2983718C24A91F2100EEAE43 /* HPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2983718C24A91F2100EEAE43 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2983718F24A91F2100EEAE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2983719124A91F2100EEAE43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2983719324A91F2100EEAE43 /* CalculatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorController.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		2983718D24A91F2100EEAE43 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2983718C24A91F2100EEAE43 /* HPApp.app */,
+				2983718C24A91F2100EEAE43 /* Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 			);
 			name = HPApp;
 			productName = HPApp;
-			productReference = 2983718C24A91F2100EEAE43 /* HPApp.app */;
+			productReference = 2983718C24A91F2100EEAE43 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -575,7 +575,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brenner.HPApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calculator;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -594,7 +594,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brenner.HPApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Calculator;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
