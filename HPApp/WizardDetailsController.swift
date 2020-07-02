@@ -75,7 +75,6 @@ class WizardDetailsController: UIViewController {
 
 extension WizardDetailsController: WKNavigationDelegate, WKUIDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("acabou")
         injection.loading.stopLoading(element: spinner)
     }
 }
