@@ -14,12 +14,14 @@ class WizardDetailsController: UIViewController {
     @IBOutlet weak var lbFear: UILabel!
     @IBOutlet weak var lbAssociations: UILabel!
     @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     
     var ministryMagic: Bool!, orderPhoenix: Bool!, dumbledoreArmy: Bool!, deathEate: Bool!
     var wizardName: String!, role: String!, house: String!, school: String!, bloodStatus: String!, wand: String!, patronus: String!, animagus: String!, fear: String!
     
     let injection = Injection()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +49,13 @@ class WizardDetailsController: UIViewController {
     }
     
     private func confiWebServices(){
+        injection.loading.startLoad(element: spinner, completion: nil)
         injection.webKitService.search(name: wizardName) { (request) in
+            self.webView.uiDelegate = self
+            self.webView.navigationDelegate = self
             self.webView.load(request)
         }
+        
     }
     
     private func associations(){
@@ -62,16 +68,14 @@ class WizardDetailsController: UIViewController {
         } else if deathEate {
             lbAssociations.text = "Death Eate Member"
         } else {
-            lbAssociations.text = "No information about associations"
+            lbAssociations.text = "No public association"
         }
     }
 }
 
 extension WizardDetailsController: WKNavigationDelegate, WKUIDelegate {
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        print("fail")
-    }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("finished")
+        print("acabou")
+        injection.loading.stopLoading(element: spinner)
     }
 }

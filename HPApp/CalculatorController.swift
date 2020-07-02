@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class  CalculatorController: UIViewController {
     
     
     @IBOutlet weak var lbResult: UILabel!
