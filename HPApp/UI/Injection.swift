@@ -4,6 +4,7 @@ class Injection {
     let housesService: AlamofireHousesService
     let spellsService: AlamofireSpellsService
     let charactersService: AlamofireCharactersService
+    let webKitService = WebKitService()
     
     init() {
         housesService = AlamofireHousesService(client: clientInstance)

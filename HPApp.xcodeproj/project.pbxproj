@@ -35,6 +35,11 @@
 		298371AD24A97ED600EEAE43 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298371AC24A97ED600EEAE43 /* Spells.swift */; };
 		298371B024A982C500EEAE43 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298371AF24A982C500EEAE43 /* DataError.swift */; };
 		298371B924A9C6C200EEAE43 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298371B824A9C6C200EEAE43 /* ProfileViewController.swift */; };
+		29ECDFE024AD1BD3006C05BB /* WizardDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECDFDF24AD1BD3006C05BB /* WizardDetailsController.swift */; };
+		29ECDFE324AD2C23006C05BB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29ECDFE224AD2C23006C05BB /* WebKit.framework */; };
+		29ECE00824AD47B3006C05BB /* WebKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECE00724AD47B3006C05BB /* WebKitService.swift */; };
+		29ECE00A24AD48C9006C05BB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECE00924AD48C9006C05BB /* WebService.swift */; };
+		29ECE00E24AD569D006C05BB /* WizardsTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECE00D24AD569D006C05BB /* WizardsTableViewHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +72,11 @@
 		298371AC24A97ED600EEAE43 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
 		298371AF24A982C500EEAE43 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		298371B824A9C6C200EEAE43 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		29ECDFDF24AD1BD3006C05BB /* WizardDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardDetailsController.swift; sourceTree = "<group>"; };
+		29ECDFE224AD2C23006C05BB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		29ECE00724AD47B3006C05BB /* WebKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitService.swift; sourceTree = "<group>"; };
+		29ECE00924AD48C9006C05BB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		29ECE00D24AD569D006C05BB /* WizardsTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardsTableViewHelper.swift; sourceTree = "<group>"; };
 		39A9AA7B4440B86A8C30F490 /* Pods_HPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1D6DD6954EF22DE8FC47A3 /* Pods-HPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPApp.debug.xcconfig"; path = "Target Support Files/Pods-HPApp/Pods-HPApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6930121FB196F6B5FFE8D4D8 /* Pods-HPApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPApp.release.xcconfig"; path = "Target Support Files/Pods-HPApp/Pods-HPApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29ECDFE324AD2C23006C05BB /* WebKit.framework in Frameworks */,
 				1080EB3E73EA887E99A7FC23 /* Pods_HPApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +98,7 @@
 		2946ABB424AA7A5A00EDF8D7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				29ECE00F24AD56D5006C05BB /* Helpers */,
 				298371BA24A9C97B00EEAE43 /* Controllers */,
 				298371B724A9B84100EEAE43 /* Storyboard */,
 				2946ABD424AA928200EDF8D7 /* Injection.swift */,
@@ -112,6 +124,7 @@
 				2946ABBF24AA861E00EDF8D7 /* AlamofireSpellsService.swift */,
 				2946ABC124AA8C3A00EDF8D7 /* AlamofireHousesService.swift */,
 				2946ABC324AA8D9B00EDF8D7 /* AlamofireCharacterService.swift */,
+				29ECE00724AD47B3006C05BB /* WebKitService.swift */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -134,6 +147,7 @@
 				2946ABB924AA807400EDF8D7 /* HouseService.swift */,
 				2946ABBD24AA84FE00EDF8D7 /* CharacterService.swift */,
 				2946ABC524AA8F5F00EDF8D7 /* Expression.swift */,
+				29ECE00924AD48C9006C05BB /* WebService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -162,11 +176,7 @@
 				2946ABB624AA7A7500EDF8D7 /* Infra */,
 				2946ABB524AA7A6000EDF8D7 /* Domain */,
 				2946ABB424AA7A5A00EDF8D7 /* UI */,
-				2983718F24A91F2100EEAE43 /* AppDelegate.swift */,
-				2983719124A91F2100EEAE43 /* SceneDelegate.swift */,
-				2983719B24A91F2300EEAE43 /* Assets.xcassets */,
-				298371A024A91F2300EEAE43 /* Info.plist */,
-				2983719824A91F2100EEAE43 /* HPApp.xcdatamodeld */,
+				29ECDFE124AD1D97006C05BB /* Main */,
 			);
 			path = HPApp;
 			sourceTree = "<group>";
@@ -206,9 +216,30 @@
 				298371B824A9C6C200EEAE43 /* ProfileViewController.swift */,
 				2946ABAF24AA6F3B00EDF8D7 /* WizardsCell.swift */,
 				2946ABB124AA701D00EDF8D7 /* WizardsTableViewController.swift */,
+				29ECDFDF24AD1BD3006C05BB /* WizardDetailsController.swift */,
 			);
 			name = Controllers;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		29ECDFE124AD1D97006C05BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2983719124A91F2100EEAE43 /* SceneDelegate.swift */,
+				2983718F24A91F2100EEAE43 /* AppDelegate.swift */,
+				2983719B24A91F2300EEAE43 /* Assets.xcassets */,
+				298371A024A91F2300EEAE43 /* Info.plist */,
+				2983719824A91F2100EEAE43 /* HPApp.xcdatamodeld */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		29ECE00F24AD56D5006C05BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				29ECE00D24AD569D006C05BB /* WizardsTableViewHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		35E9BA837711DC0C262F94E7 /* Pods */ = {
@@ -223,6 +254,7 @@
 		EFC210EAC985F8A4FBC20EA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29ECDFE224AD2C23006C05BB /* WebKit.framework */,
 				39A9AA7B4440B86A8C30F490 /* Pods_HPApp.framework */,
 			);
 			name = Frameworks;
@@ -349,13 +381,17 @@
 				2983719424A91F2100EEAE43 /* CalculatorController.swift in Sources */,
 				2946ABCF24AA913600EDF8D7 /* Divide.swift in Sources */,
 				2946ABC624AA8F5F00EDF8D7 /* Expression.swift in Sources */,
+				29ECE00E24AD569D006C05BB /* WizardsTableViewHelper.swift in Sources */,
 				2946ABC924AA908B00EDF8D7 /* Sum.swift in Sources */,
 				298371B924A9C6C200EEAE43 /* ProfileViewController.swift in Sources */,
+				29ECE00824AD47B3006C05BB /* WebKitService.swift in Sources */,
 				2946ABCD24AA911D00EDF8D7 /* Subtraction.swift in Sources */,
 				2946ABB024AA6F3B00EDF8D7 /* WizardsCell.swift in Sources */,
 				2946ABC024AA861E00EDF8D7 /* AlamofireSpellsService.swift in Sources */,
 				2946ABB224AA701D00EDF8D7 /* WizardsTableViewController.swift in Sources */,
+				29ECE00A24AD48C9006C05BB /* WebService.swift in Sources */,
 				298371AD24A97ED600EEAE43 /* Spells.swift in Sources */,
+				29ECDFE024AD1BD3006C05BB /* WizardDetailsController.swift in Sources */,
 				298371A924A97C6500EEAE43 /* Characters.swift in Sources */,
 				2983719024A91F2100EEAE43 /* AppDelegate.swift in Sources */,
 				2946ABC424AA8D9B00EDF8D7 /* AlamofireCharacterService.swift in Sources */,
