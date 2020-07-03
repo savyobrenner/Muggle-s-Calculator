@@ -15,7 +15,6 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tfMagicCode.text! = String(injection.dataManager.returnMagicCode())
-        print(injection.dataManager.returnMagicCode())
     }
     
     override func viewWillAppear(_ animated: Bool) {

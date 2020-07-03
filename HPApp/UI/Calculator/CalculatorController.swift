@@ -111,7 +111,8 @@ class  CalculatorController: UIViewController {
     
     private func addCode(){
         if injection.dataManager.isCodeEmpty() {
-            injection.alerts.showAlertWithTextField(titulo: "Welcome to Muggle's Calculator", mensagem: "Now, you have to chose whats is your magic code to access the special content", on: self, onDone: { (result) in
+            injection.alerts.showAlertWithTextField(titulo: "Welcome to Muggle's Calculator", mensagem: "Now, you have to chose whats is your magic code to access the special content.(The default code is 0000, for access you just have to write the sequence and press '%'.",
+                                                    on: self, onDone: { (result) in
                 self.injection.dataManager.addCode(magicCode: String(result))
             }) { (defaultResult) in
                 self.injection.dataManager.addCode(magicCode: String(defaultResult))
