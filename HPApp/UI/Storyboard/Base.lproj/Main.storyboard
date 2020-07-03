@@ -10,7 +10,7 @@
         <!--Calculator Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CalculatorController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculatorController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,7 +278,7 @@
         <!--Code-->
         <scene sceneID="3gX-6Z-4PE">
             <objects>
-                <viewController id="wsm-8B-Hta" customClass="ProfileViewController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wsm-8B-Hta" customClass="ProfileViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="321-kZ-mGf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,7 +385,7 @@
         <!--Spells-->
         <scene sceneID="sK5-i6-yZT">
             <objects>
-                <tableViewController id="KDP-zc-hM5" customClass="SpellsTableViewController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KDP-zc-hM5" customClass="SpellsTableViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rhw-9S-kn5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,7 +396,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="spellCell" rowHeight="105" id="swk-7Z-wIP" customClass="SpellCell" customModule="HPApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="spellCell" rowHeight="105" id="swk-7Z-wIP" customClass="SpellCell" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="swk-7Z-wIP" id="21b-Fg-6r6">
@@ -463,7 +463,7 @@
         <!--Wizards-->
         <scene sceneID="ALW-kK-kc0">
             <objects>
-                <tableViewController id="bMk-ZW-oW6" customClass="WizardsTableViewController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bMk-ZW-oW6" customClass="WizardsTableViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jbD-fY-WLz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,7 +474,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wizardCell" rowHeight="102" id="wo4-48-fP3" customClass="WizardsCell" customModule="HPApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wizardCell" rowHeight="102" id="wo4-48-fP3" customClass="WizardsCell" customModule="Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wo4-48-fP3" id="cbE-Jg-4MK">
@@ -562,7 +562,7 @@
         <!--Wizard Details Controller-->
         <scene sceneID="yFO-Zr-Gsz">
             <objects>
-                <viewController id="xjF-o6-kS8" customClass="WizardDetailsController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xjF-o6-kS8" customClass="WizardDetailsController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RYw-4u-PMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

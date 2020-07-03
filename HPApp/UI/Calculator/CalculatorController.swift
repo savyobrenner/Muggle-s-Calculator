@@ -12,7 +12,7 @@ class  CalculatorController: UIViewController {
     var perfomingMath: Bool = false
     var operation = 0
     var result = ""
-    
+
     let injection = Injection()
     
     var operationLabel: [Tag: String] = [Tag.dividerTag:"/", Tag.multiplicationTag:"x", Tag.subtractionTag:"-", Tag.sumTag:"+"]
@@ -23,6 +23,9 @@ class  CalculatorController: UIViewController {
         super.viewDidLoad()
         operationExpression = [Tag.dividerTag: {self.divide()}, Tag.multiplicationTag: {self.multiplication()}, Tag.subtractionTag:{self.subtraction()}, Tag.sumTag:{self.sum()}]
         magicView.isHidden = true
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (timer) in
+            self.addCode()
+        }
     }
     
     
@@ -48,7 +51,7 @@ class  CalculatorController: UIViewController {
             
             lbResult.text = operationLabel[Tag(rawValue: sender.tag)!]
             
-          
+            
             if sender.tag == 18{
                 
                 if !previousNumber.isLess(than: 0.0){
@@ -57,8 +60,9 @@ class  CalculatorController: UIViewController {
                     lbResult.text = String(String("\(previousNumber)").dropFirst())
                 }
             }
+            
             if sender.tag == 19{
-                if numberOnScreen == 2509{
+                if numberOnScreen == Double(injection.dataManager.returnMagicCode()){
                     magicView.isHidden = false
                     Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
                         self.magicView.backgroundColor = .red
@@ -83,10 +87,12 @@ class  CalculatorController: UIViewController {
         if operationExpression[Tag(rawValue: sender.tag)!] != nil {
             result = operationExpression[Tag(rawValue: sender.tag)!]!()
         }
+            
         else if sender.tag == 16 {
-            
+            if previousNumber != 0 {
+            result = operationExpression[Tag(rawValue: operation)!]!()
             lbResult.text = String(result)
-            
+            }
         }
             
         else if sender.tag == 11{
@@ -103,6 +109,15 @@ class  CalculatorController: UIViewController {
         
     }
     
+    private func addCode(){
+        if injection.dataManager.isCodeEmpty() {
+            injection.alerts.showAlertWithTextField(titulo: "Welcome to Muggle's Calculator", mensagem: "Now, you have to chose whats is your magic code to access the special content", on: self, onDone: { (result) in
+                self.injection.dataManager.addCode(magicCode: String(result))
+            }) { (defaultResult) in
+                self.injection.dataManager.addCode(magicCode: String(defaultResult))
+            }
+        }
+    }
     
     private func divide()-> String{
         let result = injection.expressionResolver(type: .divide).execute(previousNumber, numberOnScreen)

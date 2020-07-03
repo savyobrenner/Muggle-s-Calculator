@@ -5,7 +5,7 @@ class WizardsTableViewController: UITableViewController {
     var characters: [Characters] = []
     let injection = Injection()
     let spinner = UIActivityIndicatorView(style: .large)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

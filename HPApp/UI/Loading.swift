@@ -10,6 +10,7 @@ class Loading {
            completion!()
         }
     }
+    
     func stopLoading(element: UIActivityIndicatorView){
         element.stopAnimating()
         element.isHidden = true

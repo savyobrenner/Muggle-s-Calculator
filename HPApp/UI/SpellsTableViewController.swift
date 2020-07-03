@@ -2,13 +2,12 @@ import UIKit
 
 class SpellsTableViewController: UITableViewController {
     
-    var spells: [Spells] = []
     let injection = Injection()
     let spinner = UIActivityIndicatorView(style: .large)
+    var spells: [Spells] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         injection.loading.startLoad(element: spinner) {
             self.tableView.backgroundView = self.spinner
         }

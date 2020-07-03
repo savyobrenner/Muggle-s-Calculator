@@ -13,7 +13,9 @@ class ProfileViewController: UIViewController {
 
 
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        tfMagicCode.text! = String(injection.dataManager.returnMagicCode())
+        print(injection.dataManager.returnMagicCode())
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -21,7 +23,8 @@ class ProfileViewController: UIViewController {
     }
 
     @IBAction func update(_ sender: UIButton) {
-        
+        injection.dataManager.updateCode(magicCode: tfMagicCode.text!)
+        view.reloadInputViews()
     }
     
     

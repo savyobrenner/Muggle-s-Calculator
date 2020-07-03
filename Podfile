@@ -7,5 +7,6 @@ target 'HPApp' do
 
   # Pods for HPApp
   pod 'Alamofire', '~> 5.2'
+  pod 'lottie-ios'
 
 end
