@@ -42,8 +42,11 @@ class DataManager {
         var magicCode = 0000
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CodeInformation")
             do{
-                let result = try context.fetch(fetchRequest) as? [NSManagedObject]
-                magicCode = result![0].value(forKey: "magicCode") as! Int
+                let result = try context.fetch(fetchRequest) as! [NSManagedObject]
+                if !result.isEmpty{
+                    magicCode = result[0].value(forKey: "magicCode") as! Int
+                    
+                }
             }catch{
                 fatalError("Error is retriving titles items")
             }
