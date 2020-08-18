@@ -119,8 +119,8 @@
 		29293BF824AE714D00414097 /* Wizards */ = {
 			isa = PBXGroup;
 			children = (
-				2946ABB124AA701D00EDF8D7 /* WizardsTableViewController.swift */,
 				29ECDFDF24AD1BD3006C05BB /* WizardDetailsController.swift */,
+				2946ABB124AA701D00EDF8D7 /* WizardsTableViewController.swift */,
 				29ECE00D24AD569D006C05BB /* WizardsTableViewHelper.swift */,
 				2946ABAF24AA6F3B00EDF8D7 /* WizardsCell.swift */,
 			);
